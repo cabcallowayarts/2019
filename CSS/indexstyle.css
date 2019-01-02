@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: "Neutraface", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: "JosefinSans Bold", bold, sans-serif;
+}
+
+p {
+    margin: 0px;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#links {
+
+}
+
+#sectionone {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+#leftone {
+    width: auto;
+}
+
+#rightone {
+    width: 300px;
+}
+
+#placeholder1 {
+    max-width: 300px;
+}
