@@ -2,16 +2,31 @@ body {
     margin: 0px;
 }
 
+@font-face {
+    font-family:"Intro-Inline";
+    src: url("fonts/Intro_Inline.eot?")
+    format("eot"),url("fonts/Intro_Inline.woff")
+    format("woff"),url("fonts/Intro_Inline.ttf")
+    format("truetype"),url("fonts/Intro_Inline.svg#Intro-Inline")
+    format("svg");
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+
 h1 {
-    font-family: "Neutraface", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-family: "Intro-Inline";
+    font-size: 220px;
+    margin: 0px;
+    text-align: center;
 }
 
 h2 {
     margin: 0px;
     text-align: center;
-    font-family: "JosefinSans Bold", bold, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
 }
 
 p {
@@ -20,29 +35,302 @@ p {
 }
 
 ul {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     padding: 0px;
+    width: 100%;
+}
+
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+#block1 {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#block2 {
+   height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    bottom: 510px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+#block3 {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    bottom: 1000px;
+    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 #links {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 135px;
+}
+
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 90px;
 
 }
 
-#sectionone {
+#section3 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+}
+
+#leftone {
+    width: 60%;
+}
+
+#rightone {
+    width: 300px;
+    margin-left: 10px;
+}
+
+#lefttwo {
+    width: 500px;
+    margin-right: 30px;
+    background-color: white;
+}
+
+#righttwo {
+    width: auto;
+}
+
+#placeholder1 {
+    max-width: 100%;
+}
+
+#placeholder2 {
+    max-width: 100%;
+}
+
+#texttwo {
+    font-size: 20px;
+}
+
+.regtext {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: justify;
+}
+
+.galleryimages {
+    width: 33%;
+    height: 250px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.midsec {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.midtext {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    font-size: 110px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 96px;
+    margin-top: 15px;
+    position: relative;
+    bottom: 1000px;
+}
+
+#footerleft {
+    width: 141px;
+}
+#footerright {
+    width: 510px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family:"Intro-Inline";
+    src: url("fonts/Intro_Inline.eot?")
+    format("eot"),url("fonts/Intro_Inline.woff")
+    format("woff"),url("fonts/Intro_Inline.ttf")
+    format("truetype"),url("fonts/Intro_Inline.svg#Intro-Inline")
+    format("svg");
+    font-weight: 700;
+    font-style: bold;
+}
+
+h1 {
+    font-family: "Intro-Inline";
+    font-size: 220px;
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+}
+
+p {
+    margin: 0px;
+    text-align: justify;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+#links {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+
+#section1 {
     display: flex;
     justify-content: space-between;
     margin-left: 12%;
     margin-right: 12%;
 }
 
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+}
+
 #leftone {
-    width: auto;
+    width: 60%;
 }
 
 #rightone {
     width: 300px;
 }
 
+#lefttwo {
+    width: 500px;
+    margin-right: 30px;
+}
+
+#righttwo {
+    width: auto;
+}
+
 #placeholder1 {
-    max-width: 300px;
+    max-width: 100%;
+}
+
+#placeholder2 {
+    max-width: 100%;
+}
+
+#texttwo {
+    font-size: 20px;
+}
+
+.regtext {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: justify;
+}
+
+.galleryimages {
+    width: 33%;
+    height: 250px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.midsec {
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 96px;
+    margin-top: 15px;
+}
+
+#footerleft {
+    width: 141px;
+}
+#footerright {
+    width: 510px;
+}
 }
