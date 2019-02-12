@@ -51,7 +51,6 @@ a {
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #block2 {
@@ -104,7 +103,7 @@ a {
 #section3 {
     display: flex;
     flex-direction: column;
-    padding-top: 160px;
+    padding-top: 120px;
 }
 
 #section1date {
@@ -179,7 +178,7 @@ a {
     width: 100%;
     z-index: 2;
     position: relative;
-    font-size: 110px;
+    font-size: 90px;
 }
 
 #footer {
@@ -217,6 +216,37 @@ a {
     margin-top: 10px;
     margin-left: 12%;
     margin-right: 12%;
+}
+
+.ticketdate {
+    width: 600px;
+    height: 90px;
+    background-color: aquamarine;
+}
+
+.albumlook2 {
+    max-width: 80%;
+    align-self: center;
+}
+
+#shop1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.shopitem {
+    height: 20vw;
 }
 
 
