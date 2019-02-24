@@ -32,6 +32,14 @@ h2 {
     font-size: 32px;
 }
 
+h3 {
+    font-family: poplar-std, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0px;
+}
+
 p {
     margin: 0px;
     text-align: justify;
@@ -50,7 +58,34 @@ a {
     text-decoration: none;
     color: black;
     font-size: 23px;
+    font-weight: 600;
 }
+
+a:hover {
+    font-style: oblique;
+}
+
+#fold {
+    background-image: url(../resources/images/topbanner.png);
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#headtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    width: 200px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
 
 #block1 {
     height: auto;
@@ -75,15 +110,17 @@ a {
 
 #links {
     display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    align-items: center;
+    width: 100%;
+    height: 65px;
     margin-bottom: 30px;
+    background-color: #00A7B1;
 }
 
 #section1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin-left: 12%;
     margin-right: 12%;
     padding-bottom: 135px;
@@ -93,6 +130,7 @@ a {
     background-size: contain;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 12%;
     margin-right: 12%;
     padding-bottom: 90px;
@@ -122,30 +160,39 @@ a {
 }
 
 #rightone {
-    width: 300px;
+    max-width: 250px;
     margin-left: 10px;
+    height: 380px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 10px 12px;
+    border: 2px solid black;
 }
 
 #lefttwo {
-    width: 500px;
+    min-width: 200px;
+    height: auto;
     margin-right: 30px;
+    border: 2px solid black;
     background-color: white;
+    padding: 7px;
 }
 
 #righttwo {
-    width: auto;
+    min-width: 300px;
 }
 
 #placeholder1 {
     max-width: 100%;
 }
 
-#placeholder2 {
+#aboutimg {
     max-width: 100%;
+    border: 2px solid black;
 }
 
 #texttwo {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .regtext {
@@ -170,7 +217,7 @@ a {
     width: 100%;
     position: absolute;
     z-index: 1;
-    height: 400px;
+    height: 120px;
 }
 
 .midtext {
@@ -190,17 +237,30 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 96px;
-    margin-top: 15px;
+    height: 110px;
     position: relative;
     bottom: 0px;
+    margin-bottom: 12px;
+    margin-right: 13px;
+    margin-top: 5px;
+    margin-left: 4px;
+    box-shadow: 10px 10px;
+    border: 2px solid black;
 }
 
 #footerleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 141px;
+    margin-left: 5px;
 }
 #footerright {
     width: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5px;
 }
 
 #dates1 {
@@ -345,6 +405,7 @@ a {
 #lefttwo {
     width: 500px;
     margin-right: 30px;
+    border: 2px solid black;
 }
 
 #righttwo {
@@ -355,8 +416,9 @@ a {
     max-width: 100%;
 }
 
-#placeholder2 {
+#aboutimg {
     max-width: 100%;
+    border: 2px solid black;
 }
 
 #texttwo {
