@@ -141,7 +141,7 @@ a:hover {
 #section3 {
     display: flex;
     flex-direction: column;
-    padding-top: 180px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 
@@ -284,9 +284,42 @@ a:hover {
 }
 
 .ticketdate {
-    width: 600px;
-    height: 90px;
-    background-color: aquamarine;
+    background-image: url(../resources/images/ticketback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin-left: 12%;
+    margin-bottom: 15px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tixtext {
+    color: white;
+}
+
+.buyticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.buyticket:hover {
+    background-color: #C9C9C9;
+    cursor: pointer;
 }
 
 .albumlook2 {
@@ -312,153 +345,4 @@ a:hover {
 
 .shopitem {
     height: 20vw;
-}
-
-
-
-
-@media screen and (max-width: 800px) {
-    body {
-    margin: 0px;
-}
-
-@font-face {
-    font-family:"Intro-Inline";
-    src: url("fonts/Intro_Inline.eot?")
-    format("eot"),url("fonts/Intro_Inline.woff")
-    format("woff"),url("fonts/Intro_Inline.ttf")
-    format("truetype"),url("fonts/Intro_Inline.svg#Intro-Inline")
-    format("svg");
-    font-weight: 700;
-    font-style: bold;
-}
-
-h1 {
-    font-family: "Intro-Inline";
-    font-size: 220px;
-    margin: 0px;
-    text-align: center;
-}
-
-h2 {
-    margin: 0px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 32px;
-}
-
-p {
-    margin: 0px;
-    text-align: justify;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0px;
-    width: 100%;
-}
-
-a {
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
-}
-
-#links {
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30px;
-}
-
-#section1 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 12%;
-    margin-right: 12%;
-}
-
-#section2 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 12%;
-    margin-right: 12%;
-}
-
-#section3 {
-    display: flex;
-    flex-direction: column;
-}
-
-#leftone {
-    width: 60%;
-}
-
-#rightone {
-    width: 300px;
-}
-
-#lefttwo {
-    width: 500px;
-    margin-right: 30px;
-    border: 2px solid black;
-}
-
-#righttwo {
-    width: auto;
-}
-
-#placeholder1 {
-    max-width: 100%;
-}
-
-#aboutimg {
-    max-width: 100%;
-    border: 2px solid black;
-}
-
-#texttwo {
-    font-size: 20px;
-}
-
-.regtext {
-    font-family: "Josefin Sans", sans-serif;
-    text-align: justify;
-}
-
-.galleryimages {
-    width: 33%;
-    height: 250px;
-}
-
-.rows {
-    display: flex;
-    justify-content: space-between;
-    width: 84%;
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
-.midsec {
-    width: 100%;
-}
-
-#footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 96px;
-    margin-top: 15px;
-}
-
-#footerleft {
-    width: 141px;
-}
-#footerright {
-    width: 510px;
-}
 }
