@@ -53,7 +53,7 @@ ul {
     width: 100%;
 }
 
-a {
+.linkclass {
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     color: black;
@@ -61,7 +61,7 @@ a {
     font-weight: 600;
 }
 
-a:hover {
+.linkclass:hover {
     font-style: oblique;
 }
 
@@ -84,8 +84,19 @@ a:hover {
     width: 200px;
     margin-right: 70px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
+#headcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    width: 200px;
+    margin-right: 12%;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
 
 #block1 {
     height: auto;
@@ -321,8 +332,8 @@ a:hover {
     cursor: pointer;
 }
 
-.albumlook2 {
-    max-width: 80%;
+.albumlook {
+    max-width: 90%;
     align-self: center;
 }
 
@@ -344,4 +355,20 @@ a:hover {
 
 .shopitem {
     height: 20vw;
+}
+
+.ticketorg {
+    width: 500px;
+    display: flex;
+    justify-content: space-between
+}
+
+.influence {
+    height: 20vw;
+}
+
+.imagedist {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
 }
