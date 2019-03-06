@@ -5,6 +5,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/indexstyle.css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var midscreen = "<div id="fullscreen"><div id="popup"><h2>Purchase tickets for show</h2></div></div>";
+        var date;
+        var city;
+        var loc;
+
+    $(".buyticket").click(function(){
+                    $(".buyticket").css("background-image", "none");
+                    $("#sec1left").css("visibility", "visible");
+                    $("#sec1right").css("visibility", "visible");
+                    $("#f1").hide();
+                    $("#sec1").stop(true, true).delay(250).animate({height: Height1});
+                    $("#sec1").css("cursor", "default");
+                });
+    </script>
 </head>
 <body>
 
@@ -117,6 +133,10 @@
     <a class="linkclass" href="school/chapter.html">Chapter</a>
     <a class="linkclass" href="index.html">Design Brief</a>
 </p>
+<div id="footerright">
+   <input type="text" name="lastname">
+    <input type="submit">
+</div>
 </div>
 
 </body>

@@ -389,3 +389,8 @@ ul {
     height: auto;
     justify-content: space-between;
 }
+
+.purch {
+    display: flex;
+    flex-direction: column;
+}
