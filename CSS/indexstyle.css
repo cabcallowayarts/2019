@@ -338,6 +338,19 @@ ul {
     align-self: center;
 }
 
+#salealbum {
+    background-image: url(../resources/images/whatdididoprong.png);
+    min-height: 30vw;
+    min-width: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#salealbum:hover {
+    background-image: url(../resources/images/whatdididoprongvinyl.png);
+    min-width: 44vw;
+}
+
 #shop1 {
     margin-top: 10px;
     display: flex;
@@ -348,14 +361,17 @@ ul {
 #shop {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: auto;
     width: 100%;
     margin-bottom: 50px;
+    overflow-x: scroll;
 }
 
 .shopitem {
-    height: 20vw;
+    height: 40vw;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .ticketorg {
