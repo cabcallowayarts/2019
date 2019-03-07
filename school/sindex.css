@@ -209,7 +209,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(images/DSC_8069.JPG);
+    background-image: url(images/DSC_8069.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -229,7 +229,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-image: url(images/DSC_0022.JPG);
+    background-image: url(images/DSC_0022.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -368,7 +368,7 @@ h4 {
     flex-direction: row;
     height: 100%;
     -webkit-transition: height .5s;
-    background-image: url(images/DSC_3628.JPG);
+    background-image: url(images/DSC_3628.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
