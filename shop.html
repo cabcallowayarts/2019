@@ -5,8 +5,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/indexstyle.css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style>
+        .buyticket {
+             background-color: #F26722;
+        }
+        .buyticket:hover {
+            background-color: #893815;
+        }
+    </style>
 </head>
 <body>
+
+<div id="darken"></div>
+
+<div id="pop1" class="popup"><div style="display: flex; align-content: center; justify-content: center;"><h2 style="padding-top: 5px;">Purchase T-Shirt</h2><div id="close1" class="close">&times;</div></div><div class="popbody"><br><br><button id="confirm1" class="confirm">CONFIRM</button><br><p id="confirmtext1" style="margin-left: 10px; visibility: hidden;" class="regtext">Shirt Ordered!</p></div></div>
+<div id="pop2" class="popup"><div style="display: flex; align-content: center; justify-content: center;"><h2 style="padding-top: 5px;">Purchase Hoodie</h2><div id="close2" class="close">&times;</div></div><div class="popbody"><br><br><button id="confirm2" class="confirm">CONFIRM</button><br><p id="confirmtext2" style="margin-left: 10px; visibility: hidden;" class="regtext">Tickets Ordered!</p></div></div>
 
 <div id="fold">
 <h3 id="headcont"><a href="index.html" id="headtext">bisque of the pronghorn</a></h3>
@@ -42,14 +55,20 @@
 </div>
 
 <div id="block2" style="background-image: none; height: auto;">
-<div id="section2" style="height: auto; margin-left: 0px; padding-top:  -top: 40px; width: 100%;">
+<div id="section2" style="height: auto; margin-left: 0px; padding-top:  -top: 40px; width: 100%; padding-bottom: 0px; flex-direction: column;">
     <div id="shop">
-        <div class="purch"><img class="shopitem" src="resources/images/blackt1.png"><div class="buyshirt"><h2></h2></div></div>
-        <div class="purch"><img class="shopitem" src="resources/images/whitet1.png"><div class="buyshirt"></div></div>
-        <div class="purch"><img class="shopitem" src="resources/images/blackt2.png"><div class="buyshirt"></div></div>
-        <div class="purch"><img class="shopitem" src="resources/images/whitet2.png"><div class="buyshirt"></div></div>
-        <div class="purch"><img class="shopitem" src="resources/images/blackt3.png"><div class="buyshirt"></div></div>
-        <div class="purch"><img class="shopitem" src="resources/images/whitet3.png"><div class="buyshirt"></div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/blackt1.png"><div class="buyshirt"><div style="height: 80px; width: 220px;" id="tixbuy1" class="buyticket">Purchase</div></div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/whitet1.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy2" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/blackt2.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy3" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/whitet2.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy4" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/blackt3.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy5" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/whitet3.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy6" class="buyticket">Purchase</div></div>
+    </div>
+    <div id="shop">
+        <div class="purch"><img class="shopitem" src="resources/images/hoodie1.png"><div class="buyshirt"><h2></h2></div><div style="height: 80px; width: 220px;" id="tixbuy7" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/hoodie2.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy8" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/hoodie3.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy9" class="buyticket">Purchase</div></div>
+        <div class="purch"><img class="shopitem" src="resources/images/hoodie4.png"><div class="buyshirt"></div><div style="height: 80px; width: 220px;" id="tixbuy10" class="buyticket">Purchase</div></div>
     </div>
 </div>
 </div>
@@ -63,6 +82,14 @@
 </div>
 
 </div>
+
+<script>
+    var popup1 = document.getElementById('pop1');
+    var popup2 = document.getElementById('pop2');
+    var darken = document.getElementById('darken');
+    var tixbuy1 = document.getElementById('tixbuy1');
+    var tixbuy2 = document.getElementById('tixbuy2');
+</script>
 
 </body>
 </html>
