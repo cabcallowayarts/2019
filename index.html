@@ -5,9 +5,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/indexstyle.css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
 </head>
 <body>
+<script type="text/javascript">
+            var picPaths = ['resources/images/Birdland__The_Jazz_Corner_of_the_World,__on_W.png','resources/images/Wave-q-mqk.png','resources/images/Concert_crowd_(Unsplash).png'];
+            var curPic = -1;
 
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,4000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('frontpic1');
+                swapImage();
+            }
+        </script>
 <div id="fold">
 <h3 id="headcont"><a href="index.html" id="headtext">bisque of the pronghorn</a></h3>
 </div>
@@ -28,7 +49,7 @@
 
 <div id="section1">
     <div id="leftone">
-    <img id="placeholder1" src="resources/images/Birdland__The_Jazz_Corner_of_the_World,__on_W._44th,_NYC_(2955187888).jpg"></div>
+    <img id="frontpic1" src="resources/images/Birdland__The_Jazz_Corner_of_the_World,__on_W.png"></div>
     <div id="rightone">
     <h2>Jazz at its finest</h2>
     <p class="regtext" id="textone" style="font-size: 24px;">The Bisque of the Pronghorn an American brass band, that performs many Jazz standards, and some pop using instruments such as the trombone, trumpet, sax, and much more! On this site, you can find music, merchandise, and business inquiries with the band. </p></div>
